@@ -83,11 +83,3 @@ resource "aws_lambda_permission" "test" {
   principal     = "s3.amazonaws.com"
   source_arn    = "arn:aws:s3:::${aws_s3_bucket.bucket.id}"
 }
-
-
-# output of lambda arn
-output "arn" {
-
-  value = aws_lambda_function.test_lambda.arn
-
-}
