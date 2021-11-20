@@ -5,4 +5,4 @@ Steps:
 * fill in the missing values in the `terraform.tfvars` file
 * NOTE: If the AWS SES sandbox is being used ensure the email addresses are verifed
 * run  `terraform apply -var-file=terraform.tfvars` to build infrastructure on the AWS environment
-* To destroy infrastructure run `terraform destroy` to destroy all running infrastructure on AWS
+* To destroy infrastructure run `terraform destroy -var-file=terraform.tfvars` to destroy all running infrastructure on AWS
